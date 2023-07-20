@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlack"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".activity.LoginSignupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:drawablePadding="16dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/textHeadingLarge"
+        app:drawableStartCompat="@drawable/simform_logo" />
+
+    <TextView
+        style="@style/TextView.Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_an_account" />
+
+    <TextView
+        style="@style/TextView.Normal.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="@string/take_the_next_step" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button.LoginSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="@string/continue_with_google"
+        app:icon="@drawable/icon_google"
+        app:iconGravity="textStart"
+        app:iconTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button.LoginSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/continue_with_facebook"
+        app:icon="@drawable/icon_facebook"
+        app:iconGravity="textStart"
+        app:iconTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button.LoginSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/continue_with_apple"
+        app:icon="@drawable/icon_apple"
+        app:iconGravity="textStart"
+        app:iconTint="@null" />
+
+    <TextView
+        android:id="@+id/txtCreateAccount"
+        style="@style/TextView.Normal.Mint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="@string/create_an_account" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        style="@style/TextView.Normal.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="@string/already_have_an_account" />
+
+    <TextView
+        style="@style/TextView.Normal.Mint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/switch_to_business_account" />
+
+    <TextView
+        android:id="@+id/txtTermsPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:text="@string/terms_privacy"
+        android:textColor="@color/placeholderGrey"
+        android:textSize="@dimen/textSmall" />
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollIndicators="none"
+    tools:context=".activity.UserProfileOwnViewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgBlack">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profilebg"
+            app:layout_constraintBottom_toBottomOf="@+id/tbLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            style="@style/TextView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/name"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:src="@drawable/cancel"
+            app:layout_constraintBottom_toBottomOf="@+id/btnThreeDot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnThreeDot" />
+
+        <ImageButton
+            android:id="@+id/btnThreeDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:src="@drawable/threedot"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileName"
+            app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvProfileName"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileName" />
+
+        <ImageView
+            android:id="@+id/imgUser"
+            style="@style/Circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/profilepic"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileName" />
+
+        <TextView
+            android:id="@+id/tvFollowersCount"
+            style="@style/TextView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count"
+            app:layout_constraintBottom_toTopOf="@+id/tvFollowers"
+            app:layout_constraintEnd_toEndOf="@+id/tvFollowers"
+            app:layout_constraintStart_toStartOf="@+id/tvFollowers"
+            app:layout_constraintTop_toTopOf="@+id/imgUser"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvFollowers"
+            style="@style/TextView.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/followers"
+            app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+            app:layout_constraintEnd_toStartOf="@+id/tvFollowing"
+            app:layout_constraintStart_toEndOf="@+id/imgUser"
+            app:layout_constraintTop_toBottomOf="@+id/tvFollowersCount" />
+
+        <TextView
+            android:id="@+id/tvFollowingCount"
+            style="@style/TextView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count"
+            app:layout_constraintEnd_toEndOf="@+id/tvFollowing"
+            app:layout_constraintStart_toStartOf="@+id/tvFollowing"
+            app:layout_constraintTop_toTopOf="@+id/tvFollowersCount" />
+
+        <TextView
+            android:id="@+id/tvFollowing"
+            style="@style/TextView.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/following"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFollowers"
+            app:layout_constraintEnd_toStartOf="@+id/tvFriends"
+            app:layout_constraintStart_toEndOf="@+id/tvFollowers"
+            app:layout_constraintTop_toBottomOf="@+id/tvFollowingCount" />
+
+        <TextView
+            android:id="@+id/tvFriendsCount"
+            style="@style/TextView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count"
+            app:layout_constraintEnd_toEndOf="@+id/tvFriends"
+            app:layout_constraintStart_toStartOf="@+id/tvFriends"
+            app:layout_constraintTop_toTopOf="@+id/tvFollowingCount" />
+
+        <TextView
+            android:id="@+id/tvFriends"
+            style="@style/TextView.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFollowing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvFollowing"
+            app:layout_constraintTop_toBottomOf="@+id/tvFriendsCount" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/TextView.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/userName"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/imgUser"
+            app:layout_constraintTop_toBottomOf="@+id/imgUser" />
+
+        <TextView
+            android:id="@+id/tvBio"
+            style="@style/TextView.SubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/bio"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tvFriends"
+            app:layout_constraintStart_toStartOf="@+id/tvUserName"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            style="@style/TextView.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:drawablePadding="5dp"
+            android:text="@string/location"
+            android:textColor="@color/mint"
+            app:drawableStartCompat="@drawable/location"
+            app:layout_constraintStart_toStartOf="@+id/tvBio"
+            app:layout_constraintTop_toBottomOf="@+id/tvBio" />
+
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:text="@string/link"
+            android:textColor="@color/mint"
+            app:drawableStartCompat="@drawable/link"
+            app:layout_constraintStart_toStartOf="@+id/tvLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tbLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLink"
+            app:tabIndicatorColor="@color/mint"
+            app:tabTextColor="@color/white" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tbLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

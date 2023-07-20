@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Glimpses" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <!-- Button Signup style -->
+    <style name="Button.LoginSignup" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="cornerRadius">@dimen/btnCornerRadius</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+    </style>
+
+    <!-- Button Mint Style -->
+    <style name="Button.Mint" parent="ThemeOverlay.Material3.Button">
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/alpha_button</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="EditText" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:padding">8dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textColorHint">@color/placeholderGrey</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/corner_edittext</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Material EditText Style -->
+    <style name="Material.EditText" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColorHint">@color/placeholderGrey</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/corner_edittext</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Material TextInput Style -->
+    <style name="Material.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/placeholderGrey</item>
+        <item name="hintTextColor">@color/placeholderGrey</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <!-- Normal TextView White -->
+    <style name="TextView.Normal.White" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Normal TextView Mint -->
+    <style name="TextView.Normal.Mint" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textColor">@color/mint</item>
+    </style>
+
+    <!-- Normal TextView Grey -->
+    <style name="TextView.Normal.Grey" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <!-- Normal TextView Large -->
+    <style name="TextView.Large" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textLarge</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Normal TextView Heading -->
+    <style name="TextView.Heading" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textHeading</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Normal TextView Subtitle -->
+    <style name="TextView.SubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textSubTitle</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+    <!-- TextView Round -->
+    <style name="TextView.Rounded" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSubTitle</item>
+        <item name="android:background">@drawable/corner_textview</item>
+        <item name="cornerRadius">@dimen/btnCornerRadius</item>
+    </style>
+
+    <!-- ImageView Circle -->
+    <style name="Circle">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Search View Style -->
+    <style name="SearchView">
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:textColorHint">@color/textWhite</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/corner_searchview</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ThemeOverlay.SearchView" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/white</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/offGrey</item>
+        <item name="colorOnPrimary">@color/offGrey</item>
+    </style>
+
+    <!-- EditText Label Style -->
+    <style name="TextView.editTextlabel" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+
+    <!-- TextView Title Style -->
+    <style name="TextView.title" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!--- TextView Subtitle Style -->
+    <style name="TextView.subtitle" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- Filter Button -->
+    <style name="btnFilterName">
+        <item name="android:text">Filter Name</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:backgroundTint">@color/offBlack</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="strokeColor">@color/offGrey</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+</resources>

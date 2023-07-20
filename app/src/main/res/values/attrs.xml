@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="OTPView">
+        <attr name="otpLength" format="integer" />
+        <attr name="width" format="dimension" />
+        <attr name="height" format="dimension" />
+        <attr name="valueColor" format="color" />
+        <attr name="backgroundSrc" format="reference|color" />
+        <attr name="customPadding" format="dimension" />
+        <attr name="customPaddingLeft" format="dimension" />
+        <attr name="customPaddingTop" format="dimension" />
+        <attr name="customPaddingRight" format="dimension" />
+        <attr name="customPaddingBottom" format="dimension" />
+        <attr name="customMargin" format="dimension" />
+    </declare-styleable>
+
+</resources>

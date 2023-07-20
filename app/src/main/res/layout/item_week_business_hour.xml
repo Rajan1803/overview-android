@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDayOfWeek"
+        style="@style/TextView.Normal.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/day_of_week"
+        app:layout_constraintEnd_toStartOf="@+id/switchWeek"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchWeek"
+        style="@style/Widget.Material3.CompoundButton.Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDayOfWeek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDayOfWeek"
+        app:thumbTint="@color/white"
+        app:trackTint="@drawable/track_switch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWeekTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/switchWeek"
+        app:layout_constraintStart_toStartOf="@+id/tvDayOfWeek"
+        app:layout_constraintTop_toBottomOf="@+id/tvDayOfWeek"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAddHours"
+        style="@style/TextView.Normal.Mint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/add_hours"
+        app:layout_constraintEnd_toEndOf="@+id/rvWeekTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rvWeekTime"
+        app:layout_constraintTop_toBottomOf="@+id/rvWeekTime" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/selectDateGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="cbRepeatDaily,tvAddHours,rvWeekTime" />
+
+    <CheckBox
+        android:id="@+id/cbRepeatDaily"
+        style="@style/TextView.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/textGrey"
+        android:text="@string/repeat_daily"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rvWeekTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAddHours"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddHours" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

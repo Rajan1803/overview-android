@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlack"
+    android:padding="16dp"
+    tools:context=".activity.AddFriendActivity">
+
+    <TextView
+        android:id="@+id/tvAddFriend"
+        style="@style/TextView.Normal.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/add_friends_via_push_or_texts"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFriendCount"
+        style="@style/TextView.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/friend_count"
+        android:textColor="@color/placeholderGrey"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddFriend"
+        app:layout_constraintStart_toStartOf="@+id/tvAddFriend"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddFriend" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:autofillHints="name"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="10dp"
+        android:hint="@string/search_contacts"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@id/tvFriendCount"
+        app:layout_constraintStart_toStartOf="@id/tvFriendCount"
+        app:layout_constraintTop_toBottomOf="@id/tvFriendCount" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAddFriend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressAddFriend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch"
+        tools:listitem="@layout/item_add_friend" />
+
+    <ProgressBar
+        android:id="@+id/progressAddFriend"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginBottom="24dp"
+        android:progress="100"
+        android:progressTint="@color/mint"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddFriendNext"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddFriendNext"
+        app:layout_constraintStart_toStartOf="@+id/btnAddFriendNext" />
+
+    <Button
+        android:id="@+id/btnAddFriendNext"
+        style="@style/Button.Mint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:enabled="false"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

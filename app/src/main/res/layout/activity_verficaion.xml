@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    tools:context=".loginActivities.VerificationActivity">
+
+    <TextView
+        style="@style/TextView.Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/verification_code" />
+
+    <TextView
+        android:id="@+id/tvEmailText"
+        style="@style/TextView.Normal.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/we_have_sent_a_code_to_your_email" />
+
+    <com.simform.glimpses.customViews.OTPView
+        android:id="@+id/otpViewVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:backgroundSrc="@drawable/corner_bordered"
+        app:customMargin="5dp"
+        app:customPaddingBottom="10dp"
+        app:customPaddingLeft="10dp"
+        app:customPaddingRight="10dp"
+        app:customPaddingTop="10dp"
+        app:height="78dp"
+        app:otpLength="4"
+        app:valueColor="@color/mint"
+        app:width="78dp" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        style="@style/TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.Normal.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/didn_t_receive_it_tap_to_resend" />
+
+        <TextView
+            android:id="@+id/tvTapResend"
+            style="@style/TextView.Normal.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:enabled="false"
+            android:text="@string/tap_to_resend" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChangeVerification"
+        style="@style/TextView.Normal.Mint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/change_verification_method" />
+
+</LinearLayout>

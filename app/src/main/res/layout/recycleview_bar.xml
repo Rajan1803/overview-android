@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        style="@style/SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:paddingStart="24dp"
+        android:textColor="@color/textWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/bar_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:lines="2"
+        android:text="@string/best_bars_in_nchicago"
+        android:textColor="@color/textWhite"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView5"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView5" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_24_locations_chicago"
+        android:textColor="@color/textGrey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/colored_border"
+        android:drawableStart="@drawable/stars_image"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/similar_places"
+        android:textAllCaps="false"
+        android:textColor="@color/mint"
+        app:layout_constraintEnd_toEndOf="@+id/materialTextView10"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView10"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView10" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewLocation"
+        style="@style/SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:theme="@style/ThemeOverlay.SearchView"
+        app:iconifiedByDefault="false"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView5"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="search" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFilterName"
+        style="@style/btnFilterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSecondFilter"
+        app:layout_constraintStart_toEndOf="@+id/materialButton2"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewLocation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSecondFilter"
+        style="@style/btnFilterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFilterName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        style="@style/btnFilterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFilterName"
+        app:strokeColor="@color/offGrey"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtvAddLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/plus_2"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/add_new_location"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/searchViewLocation"
+        app:layout_constraintStart_toStartOf="@+id/searchViewLocation"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecondFilter" />
+</androidx.constraintlayout.widget.ConstraintLayout>

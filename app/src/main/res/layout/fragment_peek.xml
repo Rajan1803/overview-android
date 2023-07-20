@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peeks"
+    tools:context=".activities.PeeksFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtvPeeks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="71dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/peeks"
+        android:textColor="@color/textWhite"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnDropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/dropdown_peeks"
+        app:layout_constraintBottom_toBottomOf="@+id/txtvPeeks"
+        app:layout_constraintStart_toEndOf="@+id/txtvPeeks"
+        app:layout_constraintTop_toTopOf="@+id/txtvPeeks" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/info_peeks"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDropdown"
+        app:layout_constraintStart_toEndOf="@+id/btnDropdown"
+        app:layout_constraintTop_toTopOf="@+id/btnDropdown" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/appCompatImageButton6"
+        android:layout_width="22dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/network_peeks"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnInfo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/appCompatImageButton7"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/revind_peeks"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatImageButton6"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageButton6" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:foregroundGravity="center"
+        android:src="@drawable/plus_peeks"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageButton7"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatImageButton7"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageButton7" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/profile_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/northern_bar_amp_brewery"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Button.Mint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:padding="0dp"
+        android:text="@string/follow"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView4"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView4"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView4" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_dots"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialButton"
+        app:layout_constraintTop_toTopOf="@+id/materialButton" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/creater_logo_peeks"
+        app:layout_constraintBottom_toTopOf="@+id/shapeableImageView2"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView2" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/appCompatImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/share_peeks"
+        app:layout_constraintBottom_toTopOf="@+id/shapeableImageView3"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView3"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView3" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/appCompatImageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sound_peek"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageButton"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageButton"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageButton" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/_243"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageButton8"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageButton8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageButton8" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/appCompatImageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/comment_peeks"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView5"
+        app:layout_constraintEnd_toEndOf="@+id/materialTextView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView5" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtVlikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/_2k"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageButton2"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageButton2" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/appCompatImageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/like_peeks"
+        app:layout_constraintBottom_toTopOf="@+id/txtVlikes"
+        app:layout_constraintEnd_toEndOf="@+id/txtVlikes"
+        app:layout_constraintStart_toStartOf="@+id/txtVlikes" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/lorem_text"
+        android:textColor="@color/textWhite"
+        app:layout_constraintBottom_toTopOf="@+id/shapeableImageView"
+        app:layout_constraintEnd_toStartOf="@id/shapeableImageView3"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

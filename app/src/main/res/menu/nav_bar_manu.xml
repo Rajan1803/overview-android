@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/locationNav"
+        android:title=""
+        android:icon="@drawable/location_nav" />
+
+    <item
+        android:id="@+id/playNav"
+        android:title=""
+        android:icon="@drawable/play_nav" />
+
+    <item
+        android:id="@+id/listNav"
+        android:title=""
+        android:icon="@drawable/list_nav" />
+
+    <item
+        android:id="@+id/searchNav"
+        android:title=""
+        android:icon="@drawable/search_nav" />
+
+    <item
+        android:id="@+id/profileNav"
+        android:title=""
+        android:icon="@drawable/profile_logo" />
+
+</menu>
