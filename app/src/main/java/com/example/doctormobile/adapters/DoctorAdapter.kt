@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.doctormobile.R
 import com.example.doctormobile.databinding.RecyclerDoctorBinding
 import com.example.doctormobile.helpers.OnButtonClick
 import com.example.doctormobile.model.Doctor
@@ -21,6 +22,19 @@ class DoctorAdapter(private var visibleData: List<Doctor>?) :
                 Glide.with(binding.root)
                     .load(doctor.image)
                     .into(binding.imgDoctor)
+                if (doctor.isSelected) {
+                    binding.imgFavourite.setImageResource(R.drawable.favourited)
+                } else {
+                    binding.imgFavourite.setImageResource(R.drawable.favourite)
+                }
+                binding.imgFavourite.setOnClickListener {
+                    doctor.isSelected = !doctor.isSelected
+                    if (doctor.isSelected) {
+                        binding.imgFavourite.setImageResource(R.drawable.favourited)
+                    } else {
+                        binding.imgFavourite.setImageResource(R.drawable.favourite)
+                    }
+                }
             }
         }
     }
