@@ -67,7 +67,7 @@
 | ----------------------------------------------------- | -------------------------------------------------- |
 | ![Payment](https://github.com/Rajan1803/overview-android/blob/readme-resources/doctorPayment.png) | ![Payment Success](https://github.com/Rajan1803/overview-android/blob/readme-resources/doctorCongrats.png) |
 
-# Doctor Screens
+# Movie Screens
 | Home Screen                                           | Movies Screen                                        |
 | ----------------------------------------------------- | -------------------------------------------------- |
 | ![Movies](https://github.com/Rajan1803/overview-android/blob/readme-resources/movieHome.png) | ![Movies List](https://github.com/Rajan1803/overview-android/blob/readme-resources/MoviesScreen.png) |
