@@ -1,7 +1,7 @@
 # Android 
 
-- Xcode - 14.2
-- Swift - 5.7.3
+- Android Studio - Flamingo
+- Kotlin - 1.8.20
 
 ### Kotlin 
 - Variable
